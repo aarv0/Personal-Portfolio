@@ -1,3 +1,125 @@
+body {
+  background: linear-gradient(0.25turn, #fffefe, #686868b2);
+  margin: 30px;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+  font-size: 1.3rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(0, 0, 0); 
+  font-family: 'Grenze', serif;
+  text-decoration: underline;
+  margin: 0px;
+}
+
+h3 {
+  font-family: 'Grenze', serif;
+  font-weight: bolder;
+  line-height: 1px;
+}
+
+p {
+  font-family: 'Grenze', serif;
+  font-weight: lighter;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1.8rem;
+}
+
+img {
+      border-color: #ff0000;
+      border-width: 10px;
+      border-style: inset;
+      border-radius: 2px;
+      width: 200px;
+      margin: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+Button {
+  padding: 20px;
+  font-size: 1.3rem;
+  border-radius: 30px;
+  border: 3.5mm ridge #0000ff;
+  box-sizing: border-box;
+  padding: 6px;
+  width: 20%;
+  background-color: #006eff;
+   color: white;
+   -webkit-text-stroke: 1px rgb(0, 0, 0);  
+   font-family: 'Anton', sans-serif;
+   visibility: visible;
+   margin: .5%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 8px solid black;
+  border-radius: 30px;
+  padding: 3%;
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   scroll-behavior: smooth;
