@@ -1,26 +1,27 @@
 body {
   background: linear-gradient(0.25turn, #fffefe, #686868b2);
-  margin: 30px;
+  margin: 40px;
 }
 
 h1 {
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 1.3rem;
   font-weight: bold;
-  -webkit-text-stroke: 1px rgb(0, 0, 0); 
-  font-family: 'Grenze', serif;
-  text-decoration: underline;
+  /* -webkit-text-stroke: 1px rgb(0, 0, 0);*/
+  font-family: 'Georgia', serif; 
+  /*font-family: 'Grenze', serif;
+  text-decoration: underline;*/
   margin: 0px;
 }
 
 h3 {
-  font-family: 'Grenze', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bolder;
   line-height: 1px;
 }
 
 p {
-  font-family: 'Grenze', serif;
+  font-family: 'Georgia', serif;
   font-weight: lighter;
 }
 
@@ -31,12 +32,12 @@ main {
 }
 
 img {
-      border-color: #ff0000;
-      border-width: 10px;
-      border-style: inset;
-      border-radius: 2px;
-      width: 200px;
-      margin: 5px;
+    border-color: yellow;
+    border-width: 10px;
+    border-style: inset;
+    border-radius: 2px;
+    width: 200px;
+    margin: 5px;
 }
 
 header {
@@ -50,16 +51,17 @@ Button {
   padding: 20px;
   font-size: 1.3rem;
   border-radius: 30px;
-  border: 3.5mm ridge #0000ff;
+  border: 3.5mm ridge #000000;
   box-sizing: border-box;
   padding: 6px;
   width: 20%;
-  background-color: #006eff;
-   color: white;
-   -webkit-text-stroke: 1px rgb(0, 0, 0);  
-   font-family: 'Anton', sans-serif;
-   visibility: visible;
-   margin: .5%;
+  background-color: #252525;
+  color: white;
+  /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
+  font-family: 'Georgia', serif;
+  font-weight: bolder;
+  visibility: visible;
+  margin: .5%;
 }
 
 div {
@@ -84,183 +86,3 @@ div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-* {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #1b1b1b;
-  color: white;;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif; 
-}
-
-a:visited, a {
-  color: #e2e2e1;
-}
-
-#navbar {
-  background-color:black;
-  width: 100%;
-  border-bottom: 1px solid #e2e2e1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-}
-#navbar ul {
-  display: flex;
-  justify-content: flex-end;
-}
-#navbar ul li {
-  display: inline;
-  margin-right: 1em;
-  height: 100%;
-}
-#navbar ul li a {
-  border: 1px solid black;
-  padding: 0.75em;
-  border-radius: 5px;
-  text-decoration: none;
-  background-color: #e2e2e1;
-  color: #e2e2e1;
-}
-#navbar ul li a:hover {
-  background-color: #e2e2e1;
-  color: #ffffff;
-}
-#navbar ul li .active {
-  background-color: #e2e2e1;
-  color: #ffffff;
-}
-
-#welcome-section {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#welcome-content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  padding: 1em;
-}
-
-#welcome-right {
-  margin-left: 2em;
-}
-#welcome-right img {
-  max-height: 15em;
-  border-radius: 50%;
-}
-
-#projects, .wiki {
-  background-color: #1b1b1b;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#projects h2, .wiki h2 {
-  margin-left: 2em;
-}
-
-.project-tile {
-  background-color: #e2e2e1;
-  margin: 2em;
-  padding: 1.5em;
-  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  align-items: center;
-  transition: 0.3s;
-}
-.project-tile img {
-  max-height: 10em;
-  max-width: 10em;
-  margin-right: 2em;
-  border-radius: 0.5em;
-}
-
-.project-tile:hover {
-  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.5);
-}
-
-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-}
-
-@media only screen and (max-width: 600px) {
-  #navbar ul {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  #navbar ul li {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  #navbar ul li a {
-    width: 100%;
-  }
-
-  #welcome-content {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  #welcome-content .welcome-right {
-    margin-left: 0;
-  }
-
-  .project-tile {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
