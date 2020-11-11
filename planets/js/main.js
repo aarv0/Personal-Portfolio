@@ -1,6 +1,8 @@
-import { planets } from '../data/planets.js';
+import { planets } from '../data/planets.js'
   
+let mainHeader = document.querySelector('header')
 let mainArea = document.querySelector('main')
+
 
 planets.forEach((planet)=> {
 
@@ -30,15 +32,56 @@ let planetButton = document.createElement('button');
 planetButton.textContent = 'Planets';
 
 planetButton.addEventListener('click', () => {
+    planets.forEach(planet => {
+        let matchedDiv = allDivs.find(oneDiv => {
+          return oneDiv.firstChild.textContent === planet.name;
+        })
+        matchedDiv.classList.add("animated", "fadeOut")
+        })
+    }) 
 
-    maleCharacters.forEach(character => {
+mainHeader.appendChild(planetButton)
+
+
+
+/*
+
+planets.forEach((planet)=> {
+
+    let planetDiv = document.createElement ('div')
+    let name = document.createElement ('h1')
+    let pic = document.createElement('img')
+    
+
+    name.textContent = planet.name
+    pic.src = planet.url
+
+    pic.setAttribute('class', 'card')
+
+    planetDiv.appendChild(name)
+    planetDiv.appendChild(pic)
+
+    mainArea.appendChild(planetDiv)
+
+})
+
+
+
+console.log(planets)
+
+
+let planetButton = document.createElement('button')
+planetButton.textContent = "Planets"
+
+planetButton.addEventListener('click', () => {
+
+    planetDiv.forEach(planet => {
         let matchedDiv = allDivs.find((oneDiv) => {
-            return oneDiv.firstChild.textContent === character.name
+            return oneDiv.firstChild.textContent === planet.name
         }) 
-       matchedDiv.classList.add('animated', 'fadeOut')
-       
+        console.log(matchedDiv)
+        matchedDiv[0].setAttribute("style", "display: none;")
 
-      
     }) 
  })
    
@@ -46,7 +89,7 @@ planetButton.addEventListener('click', () => {
  mainHeader.appendChild(planetButton)
 
 
-
+*/
 
 
 /*
