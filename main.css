@@ -80,6 +80,7 @@ body {
     height: 80vh;
     padding: 0 2rem;
     background: #303841;
+    font-size: 2.6rem;
   }
   .contact-links {
     display: flex;
