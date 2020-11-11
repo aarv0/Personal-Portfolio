@@ -1,5 +1,6 @@
-import { films } from '../data/films.js'
 import { people } from '../data/people.js'
+import { films } from '../data/films.js'
+
 console.log(films[0].opening_crawl)
 
 let mainHeader = document.querySelector('header')
