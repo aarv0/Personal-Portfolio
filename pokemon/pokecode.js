@@ -177,14 +177,10 @@ class Pokemon {
 */
 
 
-const alimonButton = document.querySelector('#alimon')
-const selectPokemonButton = document.querySelector('#fetchPokemon')
-const poketypeButton = document.querySelector('#poketype')
 
-alimonButton.addEventListener('click', function() {
-  let pokeName = prompt('Create a new Pokemon!:')
-      createPokeCard(new Pokemon(pokeName))
-})
+const selectPokemonButton = document.querySelector('#fetchPokemon')
+
+
 
 selectPokemonButton.addEventListener('click', function() {
     let pokemonID = prompt('Enter an ID of an existing pokemon:')
@@ -193,11 +189,8 @@ selectPokemonButton.addEventListener('click', function() {
 
 
 
-poketypeButton.addEventListener('click', function() {
-    const poisonTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "poison")
 
-console.log(poisonTypes)
-})
+
 
 
 
