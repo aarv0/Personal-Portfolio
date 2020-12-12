@@ -184,7 +184,6 @@ const poketypeButton = document.querySelector('#poketype')
 alimonButton.addEventListener('click', function() {
   let pokeName = prompt('Create a new Pokemon!:')
       createPokeCard(new Pokemon(pokeName))
-  /*createPokeCard(matchIdToImage(new Pokemon('alimon')))*/
 })
 
 selectPokemonButton.addEventListener('click', function() {
