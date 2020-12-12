@@ -1,5 +1,4 @@
-
-import { pokemon } from '/pokemon.js'
+import { pokemon } from '../data/pokemon.js'
 
 const mainContainer = document.querySelector('.container')
 
@@ -62,7 +61,7 @@ function createPokeCard(pokeData) {
   card.appendChild(cardBack(pokeData))
 
   card.addEventListener('click', function() {
-    card.classList.toggle('is-flipped')
+    card.classList.toggle('is-flipped');
   })
 
   scene.appendChild(card)
@@ -192,14 +191,11 @@ selectPokemonButton.addEventListener('click', function() {
     fetchSinglePokemon(pokemonID)
 })
 
-
-
 poketypeButton.addEventListener('click', function() {
     const poisonTypes = allFetchedPokemon.filter(pokemon => pokemon.types[0].type.name === "poison")
 
 console.log(poisonTypes)
 })
-
 
 
 
