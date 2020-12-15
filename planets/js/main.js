@@ -11,8 +11,8 @@ planets.forEach((planet)=> {
     let pic = document.createElement('img')
     
 
-    name.textContent = planet.name;
-    pic.src = `https://swapi.dev/api/planets/${planNum}.jpg`;
+    name.textContent = planet.name
+    pic.src = `https://swapi.dev/api/planets/${planNum}.jpg`
     /*ic.src = `https://starwars-visualguide.com/assets/img/planets/${planetNum}.jpg`*/
 
     pic.setAttribute('class', 'card')
